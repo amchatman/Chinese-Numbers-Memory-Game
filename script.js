@@ -19,4 +19,3 @@ for(let i = 0; i < chineseNumbers.length; i++){
 for(let j = 0; j < chinesePinyin.length; j++){
     console.log(chinesePinyin[j]);
 }
-console.log('Hello');
