@@ -19,10 +19,14 @@ const gameBoard = document.querySelector('#gameContainer');
 for(let i = 0; i < chineseNumbers.length; i++){
     //Creates a div for each element Character
     const card = document.createElement('div');
+    card.classList.add('card');
     gameBoard.appendChild(card);
     card.innerHTML = chineseNumbers[i];
 }
 for(let j = 0; j < chinesePinyin.length; j++){
-    console.log(chinesePinyin[j]);
+    const card = document.createElement('div');
+    card.classList.add('card');
+    gameBoard.appendChild(card);
+    card.innerHTML = chinesePinyin[j];
 }
 
