@@ -6,6 +6,7 @@
     --white:#FFFFFF;
     --gray:#ABABAB;
 }
+/* Global Elements */
 body{
     font-family: 'Noto Sans TC', sans-serif;
 }
@@ -30,6 +31,7 @@ nav{
 nav li{
     list-style:none;;
 }
+/* Game Board */
 #gameContainer{
     display:flex;
     justify-content:center;
@@ -51,4 +53,12 @@ nav li{
 .card:hover{
     color:var(--gray);
     cursor:pointer;
+}
+/* Color Themes */
+@media(prefer-color-schme: light){
+    :root{
+        --white-color:(--white);
+        --offblack:(--black);
+        --lightgray:(--grey);
+    }
 }
