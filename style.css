@@ -2,6 +2,9 @@
 *{
     margin:0;
     padding:0;
+    --black:#2D2D2D;
+    --white:#FFFFFF;
+    --gray:#ABABAB;
 }
 body{
     font-family: 'Noto Sans TC', sans-serif;
@@ -32,7 +35,6 @@ nav li{
     justify-content:center;
     flex-wrap:wrap;
     width:350px;
-    border:2px solid black;
     margin:0 auto;
 
 }
@@ -42,4 +44,11 @@ nav li{
     width:60px;
     height:60px;
     text-align:center;
+    background-color:var(--black);
+    color:var(--white);
+
+}
+.card:hover{
+    color:var(--gray);
+    cursor:pointer;
 }
