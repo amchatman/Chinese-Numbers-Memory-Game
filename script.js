@@ -12,19 +12,17 @@ On Reset rerange cards and play again.
 const chineseNumbers = ['一','二','三','四','五','六','七','八','九','十'];
 const chinesePinyin =['yì','èr','sān','sì','wǔ','liù','qī','bā,','jiǔ','shí'];
 
+//Creates a reference to the bord-container element
+const gameBoard = document.querySelector('#gameContainer');
 
-//Check for card match
-function checkMatch(card1,card2){
-    const num1 = chineseNumbers.indexOf(card1.textContent);
-    const num2 = chineseNumbers.indexOf(card2.textContent);
-
-    if(chinesePinyin[num1]=== card1.textContent){
-        return true;
-    }
-    if(chinesePinyin[num2]=== card2.textContent) {
-        return true;
-    }   
-    else{
-        return false;
-    }
+//Loops through the characters
+for(let i = 0; i < chineseNumbers.length; i++){
+    //Creates a div for each element Character
+    const card = document.createElement('div');
+    gameBoard.appendChild(card);
+    card.innerHTML = chineseNumbers[i];
 }
+for(let j = 0; j < chinesePinyin.length; j++){
+    console.log(chinesePinyin[j]);
+}
+
