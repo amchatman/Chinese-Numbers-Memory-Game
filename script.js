@@ -29,8 +29,3 @@ for(let j = 0; j < chinesePinyin.length; j++){
     gameBoard.appendChild(card);
     card.innerHTML = chinesePinyin[j];
 }
-//Color & Prefer color theme
-const themeSettings = evt =>{
-    const body = document.body;
-    const theme = evt.currentTarget.selectedOptions[0].value;
-}

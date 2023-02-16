@@ -5,6 +5,31 @@
     --black:#2D2D2D;
     --white:#FFFFFF;
     --gray:#ABABAB;
+    --red:#F20C0C;
+    --gold:#F2A81D;
+    --white-gold:#F2E3B3;
+}
+/* Color theme preference */
+@media(prefers-color-scheme: light){
+    :root{
+        --primary-color:var(--white);
+        --secondary-color:var(--black);
+        --tertiary-color:var(--gray);
+    }
+}
+@media(prefers-color-scheme: dark){
+    :root{
+        --primary-color:var(--black);
+        --secondary-color:var(--white);
+        --tertiary-color:var(--gray);
+    }
+}
+@media(prefers-color-scheme: newyear){
+    :root{
+        --primary-color:var(--red);
+        --secondary-color:var(--gold);
+        --tertiary-color:var(--white-gold);
+    }
 }
 /* Global Elements */
 body{
@@ -48,34 +73,8 @@ nav li{
     text-align:center;
     background-color:var(--black);
     color:var(--white);
-
 }
 .card:hover{
     color:var(--gray);
     cursor:pointer;
-}
-/* Color Themes */
-@media(prefer-color-scheme: light){
-    :root{
-        --background-color:(--white);
-        --card-color:(--black);
-        --hover-color:(--gray);
-    }
- }
-@media(prefers-color-scheme: dark){
-    :root{
-        --background-color:(--black);
-        --card-color:(--white);
-        --hover-color:(--gray);
-    }
-}
-body[data-theme ='light']{
-    --background-color:(--white);
-    --card-color:(--black);
-    --hover-color:(--gray); 
-}
-body[data-theme ='dark']{
-    --background-color:(--black);
-    --card-color:(--white);
-    --hover-color:(--gray);
 }
