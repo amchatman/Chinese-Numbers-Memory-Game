@@ -55,10 +55,27 @@ nav li{
     cursor:pointer;
 }
 /* Color Themes */
-@media(prefer-color-schme: light){
+@media(prefer-color-scheme: light){
     :root{
-        --white-color:(--white);
-        --offblack:(--black);
-        --lightgray:(--grey);
+        --background-color:(--white);
+        --card-color:(--black);
+        --hover-color:(--gray);
     }
+ }
+@media(prefers-color-scheme: dark){
+    :root{
+        --background-color:(--black);
+        --card-color:(--white);
+        --hover-color:(--gray);
+    }
+}
+body[data-theme ='light']{
+    --background-color:(--white);
+    --card-color:(--black);
+    --hover-color:(--gray); 
+}
+body[data-theme ='dark']{
+    --background-color:(--black);
+    --card-color:(--white);
+    --hover-color:(--gray);
 }
