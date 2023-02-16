@@ -29,3 +29,27 @@ for(let j = 0; j < chinesePinyin.length; j++){
     gameBoard.appendChild(card);
     card.innerHTML = chinesePinyin[j];
 }
+
+//Prefer color theme settings
+const themeSettings = evt => {
+    const body = document.body
+    const theme = evt.currentTarget.selectedOptions[0].value
+
+    switch (theme){
+        case 'light':
+            body.setAttribute('data-theme', 'light');
+            break;
+        case 'dark':
+            body.setAttribute('data-theme','dark');
+            break;
+        case 'newYear':
+            body.setAttribute('data-theme','newyear');
+            break;
+        case 'default':
+            body.setAttribute('data-theme', 'default');
+            break;
+    }
+}
+const toggleTheme = document.getElementById('theme-toggle')
+
+toggleTheme.addEventListener('change', themeSettings)
