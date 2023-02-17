@@ -9,8 +9,9 @@ On Reset rerange cards and play again.
 */
 
 //Create a array to store characters
-const chineseNumbers = ['一','二','三','四','五','六','七','八','九','十'];
-const chinesePinyin =['yì','èr','sān','sì','wǔ','liù','qī','bā,','jiǔ','shí'];
+const chineseNumbers = ['一','一','二','二','三','三','四','四',
+                        '五','五','六','六','七','七','八','八',
+                        '九','九','十','十'];
 
 //Creates a reference to the bord-container element
 const gameBoard = document.querySelector('#gameContainer');
@@ -23,13 +24,10 @@ for(let i = 0; i < chineseNumbers.length; i++){
     gameBoard.appendChild(card);
     card.innerHTML = chineseNumbers[i];
 }
-for(let j = 0; j < chinesePinyin.length; j++){
-    const card = document.createElement('div');
-    card.classList.add('card');
-    gameBoard.appendChild(card);
-    card.innerHTML = chinesePinyin[j];
-}
-
+//Shuffle Cards
+let shuffleCards = chineseNumbers.sort(function (){
+    
+})
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
