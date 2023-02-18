@@ -12,6 +12,7 @@ On Reset rerange cards and play again.
 const chineseNumbers = ['一','一','二','二','三','三','四','四',
                         '五','五','六','六','七','七','八','八',
                         '九','九','十','十'];
+
 //Calls shuffleCards (array);
 const cardShuffle = shuffleCards(chineseNumbers);
 
@@ -24,7 +25,8 @@ for(let i = 0; i < chineseNumbers.length; i++){
     const card = document.createElement('div');
     card.classList.add('card');
     gameBoard.appendChild(card);
-    card.innerHTML = chineseNumbers[i];
+    //Print index of cards in index.html
+    card.innerHTML = chineseNumbers[i]; 
 }
 //Shuffle Cards
 function shuffleCards(array){
@@ -34,6 +36,13 @@ function shuffleCards(array){
     }
     return array;
 }
+//Click Cards
+    const clickCard = document.querySelector(".card");
+    clickCard.addEventListener("click", function(){
+
+        alert("Card Click");
+    });
+
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
