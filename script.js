@@ -13,13 +13,44 @@ const chineseNumbers = ['一','一','二','二','三','三','四','四',
                         '五','五','六','六','七','七','八','八',
                         '九','九','十','十'];
 
-//Calls shuffleCards (array);
+/*Calls shuffleCards (array);
 const cardShuffle = shuffleCards(chineseNumbers);
+*/
 
 //Creates a reference to the bord-container element
 const gameBoard = document.querySelector('#gameContainer');
 
-//Loops through the characters
+for(let i = 0; i < chineseNumbers.length; i++){
+    const flip = document.createElement('div');
+    flip.classList.add('flip');
+
+    const card = document.createElement('div');
+    card.classList.add('card');
+    flip.appendChild(card);
+    //Front Card Starts Here
+    const front = document.createElement('div');
+    front.classList.add('front');
+
+    const p = document.createElement('p');
+    p.textContent = "Front";
+    front.appendChild(p);
+
+    card.appendChild(front);
+    //Back Card Starts Here
+    const back = document.createElement('div');
+    back.classList.add('back');
+
+    const p2 = document.createElement('p');
+    p2.textContent = "Back";
+    back.appendChild(p2);
+
+    card.appendChild(back);
+    
+    gameBoard.appendChild(flip);
+}
+
+
+/*Loops through the characters
 for(let i = 0; i < chineseNumbers.length; i++){
     //Creates a div for each element Character
     const card = document.createElement('div');
@@ -28,7 +59,8 @@ for(let i = 0; i < chineseNumbers.length; i++){
     //Print index of cards in index.html
     card.innerHTML = chineseNumbers[i]; 
 }
-//Shuffle Cards
+*/
+/*Shuffle Cards
 function shuffleCards(array){
     for(let i = array.length -1; i > 0; i--){
         const randomize = Math.floor(Math.random() * (i + 1));
@@ -36,12 +68,7 @@ function shuffleCards(array){
     }
     return array;
 }
-//Click Cards
-    const clickCard = document.querySelector(".card");
-    clickCard.addEventListener("click", function(){
-
-        alert("Card Click");
-    });
+*/
 
 //Prefer color theme settings
 const themeSettings = evt => {
