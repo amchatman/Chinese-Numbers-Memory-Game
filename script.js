@@ -45,27 +45,14 @@ for(let i = 0; i < chineseNumbers.length; i++){
     
     gameBoard.appendChild(flip);
 }
+//Card Flip Section
+const flipCard = document.querySelectorAll(".card");
 
-
-/*Loops through the characters
-for(let i = 0; i < chineseNumbers.length; i++){
-    //Creates a div for each element Character
-    const card = document.createElement('div');
-    card.classList.add('card');
-    gameBoard.appendChild(card);
-    //Print index of cards in index.html
-    card.innerHTML = chineseNumbers[i]; 
+for(let j = 0; j < flipCard.length; j++){
+    flipCard[j].addEventListener("click", function(){
+        flipCard[j].classList.toggle("cardFlip");
+    })
 }
-*/
-/*Shuffle Cards
-function shuffleCards(array){
-    for(let i = array.length -1; i > 0; i--){
-        const randomize = Math.floor(Math.random() * (i + 1));
-        [array[i], array[randomize]] = [array[randomize], array[i]];
-    }
-    return array;
-}
-*/
 
 //Prefer color theme settings
 const themeSettings = evt => {
@@ -90,3 +77,20 @@ const themeSettings = evt => {
 const toggleTheme = document.getElementById('theme-toggle')
 
 toggleTheme.addEventListener('change', themeSettings)
+
+
+
+/*Shuffle Cards
+function shuffleCards(array){
+    for(let i = array.length -1; i > 0; i--){
+        const randomize = Math.floor(Math.random() * (i + 1));
+        [array[i], array[randomize]] = [array[randomize], array[i]];
+    }
+    return array;
+}
+*/
+/*const flipCard = document.querySelectorAll(".card");
+flipCard.addEventListener("click", function(e){
+    flipCard.classList.toggle("flipCard");
+})
+*/

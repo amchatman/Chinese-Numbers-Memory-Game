@@ -118,9 +118,8 @@ nav li{
     color:var(--primary-color);
     border-radius:4px;
 }
-.card:active{
-    transform: rotateY(180deg);
-    cursor:pointer;
+.card.cardFlip{
+    transform:rotateY(180deg) ;
 }
 .flip{
     margin:10px;
