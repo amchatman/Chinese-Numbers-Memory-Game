@@ -13,6 +13,9 @@ const chineseNumbers = ['一','一','二','二','三','三','四','四',
                         '五','五','六','六','七','七','八','八',
                         '九','九','十','十'];
 
+//Call function shuffleNumbers
+const shuffleCards = shuffleNumbers(chineseNumbers);
+
 //Creates a reference to the bord-container element
 const gameBoard = document.querySelector('#gameContainer');
 
@@ -42,6 +45,15 @@ for(let i = 0; i < chineseNumbers.length; i++){
     
     gameBoard.appendChild(flip);
 }
+//Shuffle chineseNumbers
+function shuffleNumbers(arr){
+    for(let k = arr.length -1; k > 0; k--){
+        const random = Math.floor(Math.random() * (k + 1));
+        [arr[k],arr[random]] = [arr[random],arr[k]];
+    }
+    return arr;
+}
+
 //Card Flip Section
 const flipCard = document.querySelectorAll(".card");
 
@@ -50,8 +62,6 @@ for(let j = 0; j < flipCard.length; j++){
         flipCard[j].classList.toggle("cardFlip");
     })
 }
-
-
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
