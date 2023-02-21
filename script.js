@@ -40,10 +40,7 @@ for(let i = 0; i < chineseNumbers.length; i++){
     const back = document.createElement('div');
     back.classList.add('back');
 
-    const p2 = document.createElement('p');
-    p2.textContent = "Back";
-    back.appendChild(p2);
-
+    back.innerHTML = chineseNumbers[i];
     card.appendChild(back);
     
     gameBoard.appendChild(flip);

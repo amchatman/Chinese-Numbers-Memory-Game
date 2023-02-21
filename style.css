@@ -118,18 +118,14 @@ nav li{
     color:var(--primary-color);
     border-radius:4px;
 }
-.card:hover{
-    color:var(--tertiary-color);
+.card:active{
     transform: rotateY(180deg);
     cursor:pointer;
 }
 .flip{
-    font-size:40px;
     margin:10px;
     width:60px;
     height:60px;
-    text-align:center;
-    border-radius:4px;
     background-color:green;
 }
 .front{
@@ -151,5 +147,4 @@ nav li{
     color:red;
     font-size:12px;
     margin:0;
-
 }
