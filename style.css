@@ -133,6 +133,7 @@ nav li{
     height:100%;
     backface-visibility:hidden;
     background-color:yellow;
+    border-radius:4px;
 }
 .back{
     position:absolute;
@@ -141,6 +142,7 @@ nav li{
     backface-visibility:hidden;
     background-color:orange;
     transform:rotateY(180deg);
+    border-radius:4px;
 }
 .card p{
     color:red;
