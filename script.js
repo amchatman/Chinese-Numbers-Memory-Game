@@ -6,12 +6,16 @@ romaization.
 If cards match add point if cards dont match reflip card
 When all card been match message congulation and reset
 On Reset rerange cards and play again.
+
+// console.log(chineseNumbers[0] === chineseNumbers[5]);
+Find a way to get the the index of the arrays in a if statement
 */
 
 //Create a array to store characters
 const chineseNumbers = ['一','一','二','二','三','三','四','四',
                         '五','五','六','六','七','七','八','八',
                         '九','九','十','十'];
+
 
 //Call function shuffleNumbers
 const shuffleCards = shuffleNumbers(chineseNumbers);
@@ -53,7 +57,6 @@ function shuffleNumbers(arr){
     }
     return arr;
 }
-
 //Card Flip Section
 const flipCard = document.querySelectorAll(".card");
 
@@ -62,6 +65,9 @@ for(let j = 0; j < flipCard.length; j++){
         flipCard[j].classList.toggle("cardFlip");
     })
 }
+//Card Match
+
+console.log('Hello');
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
