@@ -11,19 +11,22 @@ On Reset rerange cards and play again.
 Find a way to get the the index of the arrays in a if statement
 */
 
-//Create a array to store characters
+//Global variables
 const chineseNumbers = ['一','一','二','二','三','三','四','四',
                         '五','五','六','六','七','七','八','八',
                         '九','九','十','十'];
 
-
-//Call function shuffleNumbers
 const shuffleCards = shuffleNumbers(chineseNumbers);
+
+//Two items will be store here  [0] and [1] these are the comparision
+const chosenCards = [];
+
 
 //Creates a reference to the bord-container element
 const gameBoard = document.querySelector('#gameContainer');
+/***************************************/
 
-//Loop throught the chineseNumbers array 
+//Creates the board game with a loop
 for(let i = 0; i < chineseNumbers.length; i++){
     const flip = document.createElement('div');
     flip.classList.add('flip');
@@ -61,9 +64,8 @@ for(let j = 0; j < flipCard.length; j++){
     flipCard[j].addEventListener("click", function(){
         flipCard[j].classList.toggle("cardFlip");
     })
+   
 }
-//Card Match
-
 console.log('Hello');
 //Prefer color theme settings
 const themeSettings = evt => {
