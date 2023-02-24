@@ -132,6 +132,9 @@ nav li{
     backface-visibility:hidden;
     background-color:var(--secondary-color);
     border-radius:4px;
+    background-image:url("Images/pandaicon.png");
+    background-size:contain;
+    background-repeat:no-repeat;
 }
 .back{
     position:absolute;
@@ -141,9 +144,4 @@ nav li{
     background-color:var(--secondary-color);
     transform:rotateY(180deg);
     border-radius:4px;
-}
-.card p{
-    color:red;
-    font-size:12px;
-    margin:0;
 }

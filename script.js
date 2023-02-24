@@ -35,11 +35,8 @@ for(let i = 0; i < chineseNumbers.length; i++){
     const front = document.createElement('div');
     front.classList.add('front');
 
-    const p = document.createElement('p');
-    p.textContent = "Front";
-    front.appendChild(p);
-
     card.appendChild(front);
+
     //Back Card Starts Here
     const back = document.createElement('div');
     back.classList.add('back');
