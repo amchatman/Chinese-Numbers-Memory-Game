@@ -1,8 +1,8 @@
-/*Create a board with 20 blocks
-*Create two of each number to store in cards
-*Each chiniese character must match each outher
-*Once all cards our match send an congraulation message
-*Reset game on button or refresh
+/**Create a board with 20 blocks
+**Create two of each number to store in cards
+**Each chiniese character must match each outher
+**Once all cards our match send an congraulation message
+**Reset game on button or refresh
 
 // console.log(chineseNumbers[0] === chineseNumbers[5]);
 Find a way to get the the index of the arrays in a if statement
