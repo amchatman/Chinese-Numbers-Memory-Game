@@ -6,6 +6,7 @@
 
 // console.log(chineseNumbers[0] === chineseNumbers[5]);
 Find a way to get the the index of the arrays in a if statement
+*** change for loop to a foreachloop
 */
 
 //Global variables
@@ -14,10 +15,6 @@ const chineseNumbers = ['一','一','二','二','三','三','四','四',
                         '九','九','十','十'];
 
 const shuffleCards = shuffleNumbers(chineseNumbers);
-
-//Two items will be store here  [0] and [1] these are the comparision
-const chosenCards = [];
-
 
 //Creates a reference to the bord-container element
 const gameBoard = document.querySelector('#gameContainer');
@@ -58,22 +55,31 @@ function shuffleNumbers(arr){
     }
     return arr;
 }
+let cardOne = [];
+let cardTwo = [];
 
-const  backCards = document.querySelectorAll(".back");
-console.log(backCards);
-
-//Card Flip Section
+//Function for card flip
 function cardFlip(){
     const flipCard = document.querySelectorAll(".card");
 
     for(let j = 0; j < flipCard.length; j++){
-        flipCard[j].addEventListener("click", function(){
+        flipCard[j].addEventListener("click", function(){ 
             flipCard[j].classList.toggle("cardFlip");
         })
-    
     }
 }
 cardFlip();
+const  backCards = document.querySelectorAll(".back");
+console.log(backCards);
+
+
+
+function matchCard(cardOne, cardTwo){
+    if (cardOne === cardTwo){
+        return console.log("Its a Match");
+    }
+    console.log("Not a match");
+}
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
