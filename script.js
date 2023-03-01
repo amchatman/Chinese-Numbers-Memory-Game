@@ -49,6 +49,7 @@ function createBoard(){
     }
 }
 createBoard();
+
 //Function shuffle chineseNumbers
 function shuffleNumbers(arr){
     for(let k = arr.length -1; k > 0; k--){
@@ -57,17 +58,22 @@ function shuffleNumbers(arr){
     }
     return arr;
 }
+
+const  backCards = document.querySelectorAll(".back");
+console.log(backCards);
+
 //Card Flip Section
-const flipCard = document.querySelectorAll(".card");
+function cardFlip(){
+    const flipCard = document.querySelectorAll(".card");
 
-for(let j = 0; j < flipCard.length; j++){
-    flipCard[j].addEventListener("click", function(){
-        flipCard[j].classList.toggle("cardFlip");
-    })
-   
+    for(let j = 0; j < flipCard.length; j++){
+        flipCard[j].addEventListener("click", function(){
+            flipCard[j].classList.toggle("cardFlip");
+        })
+    
+    }
 }
-
-
+cardFlip();
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
