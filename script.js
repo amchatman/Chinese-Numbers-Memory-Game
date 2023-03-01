@@ -23,30 +23,33 @@ const chosenCards = [];
 const gameBoard = document.querySelector('#gameContainer');
 /***************************************/
 
-//Creates the board game with a loop
-for(let i = 0; i < chineseNumbers.length; i++){
-    const flip = document.createElement('div');
-    flip.classList.add('flip');
+//Function to create the gameBorard
+function createBoard(){
+    for(let i = 0; i < chineseNumbers.length; i++){
+        const flip = document.createElement('div');
+        flip.classList.add('flip');
 
-    const card = document.createElement('div');
-    card.classList.add('card');
-    flip.appendChild(card);
-    //Front Card Starts Here
-    const front = document.createElement('div');
-    front.classList.add('front');
+        const card = document.createElement('div');
+        card.classList.add('card');
+        flip.appendChild(card);
+        //Front Card Starts Here
+        const front = document.createElement('div');
+        front.classList.add('front');
 
-    card.appendChild(front);
+        card.appendChild(front);
 
-    //Back Card Starts Here
-    const back = document.createElement('div');
-    back.classList.add('back');
+        //Back Card Starts Here
+        const back = document.createElement('div');
+        back.classList.add('back');
 
-    back.innerHTML = chineseNumbers[i];
-    card.appendChild(back);
-    
-    gameBoard.appendChild(flip);
+        back.innerHTML = chineseNumbers[i];
+        card.appendChild(back);
+        
+        gameBoard.appendChild(flip);
+    }
 }
-//Shuffle chineseNumbers
+createBoard();
+//Function shuffle chineseNumbers
 function shuffleNumbers(arr){
     for(let k = arr.length -1; k > 0; k--){
         const random = Math.floor(Math.random() * (k + 1));
@@ -63,7 +66,8 @@ for(let j = 0; j < flipCard.length; j++){
     })
    
 }
-console.log('Hello');
+
+
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
