@@ -65,14 +65,31 @@ function cardFlip(){
     for(let j = 0; j < flipCard.length; j++){
         flipCard[j].addEventListener("click", function(){ 
             flipCard[j].classList.toggle("cardFlip");
+            if (cardOne.length === 0) {
+                cardOne.push(flipCard[j]);
+            } else {
+                cardTwo.push(flipCard[j]);
+                const valueOne = cardOne[0].querySelector('.back').innerHTML;
+                const valueTwo = cardTwo[0].querySelector('.back').innerHTML;
+                if (valueOne === valueTwo) {
+                    // The cards match
+                    cardOne = [];
+                    cardTwo = [];
+                } else {
+                    // The cards do not match, flip them back over
+                    setTimeout(() => {
+                        cardOne[0].classList.remove('cardFlip');
+                        cardTwo[0].classList.remove('cardFlip');
+                        cardOne = [];
+                        cardTwo = [];
+                    }, 1000);
+                }
+            }
         })
     }
 }
+
 cardFlip();
-const  backCards = document.querySelectorAll(".back");
-console.log(backCards);
-
-
 
 function matchCard(cardOne, cardTwo){
     if (cardOne === cardTwo){
