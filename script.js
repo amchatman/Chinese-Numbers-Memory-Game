@@ -3,10 +3,6 @@
 **Each chiniese character must match each outher
 **Once all cards our match send an congraulation message
 **Reset game on button or refresh
-
-// console.log(chineseNumbers[0] === chineseNumbers[5]);
-Find a way to get the the index of the arrays in a if statement
-*** change for loop to a foreachloop
 */
 
 //Global variables
@@ -48,6 +44,8 @@ function createBoard(){
 }
 createBoard();
 
+let matchedPairs = 0;
+
 //Function shuffle chineseNumbers
 function shuffleNumbers(arr){
     for(let k = arr.length -1; k > 0; k--){
@@ -58,6 +56,7 @@ function shuffleNumbers(arr){
 }
 let cardOne = [];
 let cardTwo = [];
+matchedPairs++;
 
 //Function for card flip
 function cardFlip(){
@@ -76,6 +75,11 @@ function cardFlip(){
                     // The cards match
                     cardOne = [];
                     cardTwo = [];
+                    matchedPairs++;
+                    if (matchedPairs === chineseNumbers.length / 2) {
+                        // All pairs have been matched, show message
+                        alert('Congratulations, you have matched all the pairs!');
+                    }
                 } else {
                     // The cards do not match, flip them back over
                     setTimeout(() => {
@@ -89,15 +93,7 @@ function cardFlip(){
         })
     }
 }
-
 cardFlip();
-
-function matchCard(cardOne, cardTwo){
-    if (cardOne === cardTwo){
-        return console.log("Its a Match");
-    }
-    console.log("Not a match");
-}
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
