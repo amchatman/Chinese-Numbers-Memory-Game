@@ -18,6 +18,7 @@ const shuffleCards = shuffleNumbers(chineseNumbers);
 
 //Creates a reference to the bord-container element
 const gameBoard = document.querySelector('#gameContainer');
+const cardContainer = document.querySelector("#cardContainer");
 /***************************************/
 
 //Function to create the gameBorard
@@ -42,7 +43,7 @@ function createBoard(){
         back.innerHTML = chineseNumbers[i];
         card.appendChild(back);
         
-        gameBoard.appendChild(flip);
+        cardContainer.appendChild(flip);
     }
 }
 createBoard();
