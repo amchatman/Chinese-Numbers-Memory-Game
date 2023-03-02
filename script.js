@@ -56,7 +56,6 @@ function shuffleNumbers(arr){
 }
 let cardOne = [];
 let cardTwo = [];
-matchedPairs++;
 
 //Function for card flip
 function cardFlip(){
