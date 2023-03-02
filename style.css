@@ -71,20 +71,19 @@ h1,h2,p{
     text-align:center;
     color:var(--secondary-color);
 }
+a{
+    font-size:14px;
+    text-decoration:none;
+    color:var(--tertiary-color);
+}
+a:hover{
+    color:var(--secondary-color);
+}
 /* Navigation */
 nav{
     display:flex;
     justify-content:flex-end;
     align-items:center;
-}
-nav ul{
-    font-size:18px;
-}
-nav li{
-    list-style:none;;
-    color:var(--secondary-color);
-    display:inline-block;
-    padding:10px;
 }
 #theme-toggle{
     background-color:var(--primary-color);
@@ -149,4 +148,7 @@ nav li{
     background-color:var(--secondary-color);
     transform:rotateY(180deg);
     border-radius:4px;
+}
+footer p{
+    font-size:14px;
 }
