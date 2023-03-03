@@ -52,16 +52,16 @@ body{
     background-color:var(--primary-color);
 }
 h1{
-    font-size:60px;
+    font-size:3.75rem;
 }
 h2{
-    font-size:30px;
+    font-size:1.875rem;
 }
 p{
-    margin:15px;
+    margin:0.9375rem;
 }
 hr{
-    width:320px;
+    width:20rem;
     margin:0 auto;
     opacity:0.2;
     color:var(--secondary-color);
@@ -72,7 +72,7 @@ h1,h2,p{
     color:var(--secondary-color);
 }
 a{
-    font-size:14px;
+    font-size:0.875rem;
     text-decoration:none;
     color:var(--tertiary-color);
 }
@@ -89,31 +89,31 @@ nav{
     background-color:var(--primary-color);
     border:none;
     color:var(--secondary-color);
-    margin:20px 10px 10px;
-    padding:5px;
+    margin:1.25rem 0.625rem 0.625rem;
+    padding:0.3125rem;
     text-align:center;
-    font-size:18px;
+    font-size:1.125rem;
 }
 /* Game Board */
 #gameContainer{
-    width:350px;
+    width:21.875rem;
     margin:0 auto;
     background-color:var(--tertiary-color);
-    border-radius:10px;
+    border-radius:0.625rem;
 }
 #cardContainer{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
     margin:0 auto; 
-    padding-bottom: 25px;
-    padding-right: 19px; 
+    padding-bottom:1.5625rem;
+    padding-right:1.1875rem; 
 }
 .card{
-    font-size:40px;
-    margin:10px;
-    width:60px;
-    height:60px;
+    font-size:2.5rem;
+    margin:0.625rem;
+    width:3.75rem;
+    height:3.75rem;
     text-align:center;
     position:absolute;
     transform-style:preserve-3d;
@@ -125,9 +125,9 @@ nav{
     transform:rotateY(180deg) ;
 }
 .flip{
-    margin:10px;
-    width:60px;
-    height:60px;
+    margin:0.625rem;
+    width:3.75rem;
+    height:3.75rem;
 }
 .front{
     position:absolute;
@@ -150,5 +150,5 @@ nav{
     border-radius:4px;
 }
 footer p{
-    font-size:14px;
+    font-size:0.875rem;
 }
