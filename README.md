@@ -1,7 +1,5 @@
 <p align="center">
-    <a href ="https://amchatman.github.io/Memory-Game/">
         <img src = "images/pandaicon.png" alt="A black and white panda bear with pattern of yin & yang" width = "100"/>
-    </a>
  <p>
 
 <h1 align="center">Chinese Numbers Memory Game</h1>
