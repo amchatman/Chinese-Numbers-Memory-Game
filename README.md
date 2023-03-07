@@ -1,17 +1,29 @@
-# Memory-Game
+<p align="center">
+    <a href ="https://amchatman.github.io/Memory-Game/">
+        <img src = "images/pandaicon.png" alt="A black and white panda bear with pattern of yin & yang" width = "100"/>
+    </a>
+ <p>
 
-## Chinese Number Memory Game
+<h1 align="center">Chinese Numbers Memory Game</h1>
+
+<img src="https://img.shields.io/github/last-commit/amchatman/memory-game?color=red&style=flat-square">
 
 ### Summary
 
 A Chinese number memory game made from Javascript is a game that challenges the player to match pairs of Chinese number characters displayed on cards. The player must flip over two cards at a time to find a matching pair. The game keeps track of how many matching pairs have been found and alerts the player when all pairs have been matched. The game also shuffles the cards randomly each time it is played to provide a new challenge for the player.
 
+### Tool Used
+- HTML
+- CSS
+- JavaScript
+- Affinity Designer
+
 ### Features
-Theme
-Include three themes Dark,Light and New Year
+- Three themes Dark,Light, and New Year
+- Custome card icons made by amchatman
 
 ### Issues
-Alert Triggers two ealry in mobile 
-Cards unmatch in mobile
+- Congratulation alert pops up too early (Mobile only)
+- Cards unmatch even when a match is found (Mobile Only)
 
 ### Last Update
