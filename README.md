@@ -1,5 +1,5 @@
 <p align="center">
-        <img src = "images/pandaicon.png" alt="A black and white panda bear with pattern of yin & yang" width = "100"/>
+        <img src="Images/pandaicon.png" alt="A black and white panda bear with pattern of yin & yang" width = "100"/>
  <p>
 
 <h1 align="center">Chinese Numbers Memory Game</h1>
