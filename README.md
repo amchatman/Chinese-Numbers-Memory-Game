@@ -10,9 +10,11 @@
 
 A Chinese number memory game made from Javascript is a game that challenges the player to match pairs of Chinese number characters displayed on cards. The player must flip over two cards at a time to find a matching pair. The game keeps track of how many matching pairs have been found and alerts the player when all pairs have been matched. The game also shuffles the cards randomly each time it is played to provide a new challenge for the player.
 
-### Tool Used
-- HTML
-- CSS
+### Technologies
+Project was created with:
+
+- HTML5
+- CSS3
 - JavaScript
 - Affinity Designer
 
@@ -23,5 +25,6 @@ A Chinese number memory game made from Javascript is a game that challenges the 
 ### Issues
 - Congratulation alert pops up too early (Mobile only)
 - Cards unmatch even when a match is found (Mobile Only)
+- Card sometime flip back over on second flip
 
 ### Last Update
