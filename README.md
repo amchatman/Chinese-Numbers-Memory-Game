@@ -19,8 +19,13 @@ Project was created with:
 - Affinity Designer
 
 ### Features
+
 - Three themes Dark,Light, and New Year
 - Custome card icons made by amchatman
+
+<p align="center">
+<img src="Images/ColorTheme.gif" width="300">
+</p>
 
 ### Issues
 - Congratulation alert pops up too early (Mobile only)
