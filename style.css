@@ -80,6 +80,18 @@ a{
 a:hover{
     color:var(--secondary-color);
 }
+.button-container{
+    margin:0 auto;
+    width:100px;
+}
+button{
+    width:100px;
+    padding:5px;
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+    border:2px solid var(--tertiary-color);
+    border-radius:4px;
+}
 .subtitle{
     font-size:0.8125rem;
     padding:0;
@@ -90,6 +102,7 @@ nav{
     justify-content:flex-end;
     align-items:center;
 }
+/* Theme */
 #theme-toggle{
     background-color:var(--primary-color);
     border:none;
@@ -102,7 +115,7 @@ nav{
 /* Game Board */
 #gameContainer{
     width:21.875rem;
-    margin:0 auto;
+    margin:10px auto;
     background-color:var(--tertiary-color);
     border-radius:0.625rem;
 }
