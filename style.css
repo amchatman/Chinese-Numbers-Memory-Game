@@ -91,6 +91,10 @@ button{
     color:var(--secondary-color);
     border:2px solid var(--tertiary-color);
     border-radius:4px;
+    cursor:pointer;
+}
+button:hover{
+    background-color:var(--tertiary-color);
 }
 .subtitle{
     font-size:0.8125rem;

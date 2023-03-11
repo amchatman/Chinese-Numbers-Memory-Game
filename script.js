@@ -93,6 +93,17 @@ function cardFlip(){
     }
 }
 cardFlip();
+
+//Restart the game on click
+restartButton.addEventListener("click", function(){
+    cardContainer.innerHTML = "";
+    createBoard();
+    matchedPairs = 0;
+    cardOne = [];
+    cardTwo = [];
+    cardFlip();
+});
+
 //Prefer color theme settings
 const themeSettings = evt => {
     const body = document.body
