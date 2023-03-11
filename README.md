@@ -31,4 +31,5 @@ Project was created with:
 - Cards unmatch even when a match is found (Mobile Only)
 - Card sometime flip back over on second flip
 
-### Last Update
+### 📈Latest Update
+- Added a restart button (3/11/2023)
