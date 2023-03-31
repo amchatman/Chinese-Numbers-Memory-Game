@@ -76,16 +76,8 @@ function cardFlip(){
                     cardTwo = [];
                     matchedPairs++;
                     if (matchedPairs === chineseNumbers.length / 2) {
-                        const alertMessage = document.createElement('div');
-                            alertMessage.innerHTML = "Congulation you match all pairs!";
-
-                        const refreshButton = document.createElement('button');
-                            refreshButton.innerHTML = 'Play Again?';
-                            refreshButton.addEventListener('click',function(){
-                                location.reload();
-                            });
-                            alertMessage.appendChild(refreshButton);
-                            alert(alertMessage.innerHTML);
+                        /* All pairs have been matched, show message
+                        alert('Congratulations, you have matched all the pairs!');*/
                     }
                 } else {
                     // The cards do not match, flip them back over
