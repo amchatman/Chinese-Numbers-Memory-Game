@@ -188,6 +188,9 @@ nav{
     margin-bottom: 20px;
     color:black;
 }
+.hidden{
+    display:none;
+}
 footer p{
     font-size:0.875rem;
 }

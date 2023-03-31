@@ -66,22 +66,28 @@ function cardFlip(){
             flipCard[j].classList.toggle("cardFlip");
             if (cardOne.length === 0) {
                 cardOne.push(flipCard[j]);
-            } else {
+            }else{
                 cardTwo.push(flipCard[j]);
                 const valueOne = cardOne[0].querySelector('.back').innerHTML;
                 const valueTwo = cardTwo[0].querySelector('.back').innerHTML;
-                if (valueOne === valueTwo) {
-                    // The cards match
-                    cardOne = [];
-                    cardTwo = [];
-                    matchedPairs++;
-                    if (matchedPairs === chineseNumbers.length / 2) {
-                        /* All pairs have been matched, show message
-                        alert('Congratulations, you have matched all the pairs!');*/
+            if (valueOne === valueTwo) {
+                // The cards match
+                cardOne = [];
+                cardTwo = [];
+                matchedPairs++;
+                if (matchedPairs === chineseNumbers.length / 2) {
+                    //Remove hidden class 
+                    const alertBox = document.getElementById("alertBox");
+                        alertBox.classList.remove("hidden");
+                    //Reload the page on click   
+                    const alertButton = document.getElementById('alertButton');
+                        alertButton.addEventListener('click', function() {
+                        location.reload();
+                         })
                     }
-                } else {
+                }else{
                     // The cards do not match, flip them back over
-                    setTimeout(() => {
+                     setTimeout(() => {
                         cardOne[0].classList.remove('cardFlip');
                         cardTwo[0].classList.remove('cardFlip');
                         cardOne = [];
