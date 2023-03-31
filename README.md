@@ -31,9 +31,10 @@ Project was created with:
 
 
 ### 😓Issues
-- Congratulation alert pops up too early (Mobile only)
+- Congratulation sometimes pop up too early
 - Cards unmatch even when a match is found (Mobile Only)
 - Card sometime flip back over on second click
 
 ### 📈Latest Update
 - Added a restart button (3/11/2023)
+- Update and create customize alert (3/31/2023)
