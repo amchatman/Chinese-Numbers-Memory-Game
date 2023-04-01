@@ -82,11 +82,11 @@ a:hover{
 }
 .button-container{
     margin:0 auto;
-    width:100px;
+    width:6.25rem;
 }
 button{
-    width:100px;
-    padding:5px;
+    width:6.25rem;
+    padding:0.3125rem;
     background-color:var(--primary-color);
     color:var(--secondary-color);
     border:2px solid var(--tertiary-color);
@@ -119,7 +119,7 @@ nav{
 /* Game Board */
 #gameContainer{
     width:21.875rem;
-    margin:10px auto;
+    margin:0.625rem auto;
     background-color:var(--tertiary-color);
     border-radius:0.625rem;
 }
@@ -141,7 +141,7 @@ nav{
     transform-style:preserve-3d;
     transition:all 0.5s ease;
     color:var(--primary-color);
-    border-radius:4px;
+    border-radius:0.25rem;
 }
 .card.cardFlip{
     transform:rotateY(180deg) ;
@@ -157,7 +157,7 @@ nav{
     height:100%;
     backface-visibility:hidden;
     background-color:var(--secondary-color);
-    border-radius:4px;
+    border-radius:0.25rem;
     background-image:url("Images/pandaicon.png");
     background-size:contain;
     background-repeat:no-repeat;
@@ -169,23 +169,22 @@ nav{
     backface-visibility:hidden;
     background-color:var(--secondary-color);
     transform:rotateY(180deg);
-    border-radius:4px;
+    border-radius:0.25rem;
 }
 #alertBox{
     position:fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
+    background-color:var(--tertiary-color);
+    padding:1.25rem;
+    border-radius:0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
 }
 #alertMessage{
-    font-size: 24px;
+    font-size:1.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom:1.25rem;
     color:black;
 }
 .hidden{
