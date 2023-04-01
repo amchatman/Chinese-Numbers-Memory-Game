@@ -185,7 +185,10 @@ nav{
     font-size:1.5rem;
     font-weight: bold;
     margin-bottom:1.25rem;
-    color:black;
+    color:var(--secondary-color);
+}
+#alertButton:hover{
+    background-color:var(--primary-color);
 }
 .hidden{
     display:none;
