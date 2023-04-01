@@ -25,9 +25,10 @@ Project was created with:
 ### 🖍 Features
 - Custom card icons made by amchatman
 - Three themes Dark,Light, and New Year. (Default theme is base on device theme settings)
-<img src="Images/ColorTheme.gif">
 
-
+<p align="center">
+        <img src="Images/ColorTheme.gif">
+</p>
 
 
 ### 😓Issues
