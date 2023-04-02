@@ -21,6 +21,7 @@ Project was created with:
 - CSS3
 - JavaScript
 - Affinity Designer
+- Invision Studios
 
 ### 🖍 Features
 - Custom card icons made by amchatman
